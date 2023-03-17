@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  localsite:
+    image: clovett_website:latest
+    container_name: clovett_website
+    networks:
+      host
+    ports:
+      - 80:80
+
+
+  
