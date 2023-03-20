@@ -82,6 +82,21 @@ p {
   }
 
   .body{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 18%;
+  }
+
+  .boldtext{
+    font-weight: bolder;
+  }
+
+  ul{
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+  li{
+    margin-top: 1%;
+  }
+  .bullet_items{
+    margin-left :15%;
   }
