@@ -1,0 +1,25 @@
+.body, p, ul, li{
+    text-align: left;
+}
+
+.company{
+    font-size: medium;
+}
+
+.companydescription{
+    font-size: small;
+    font-style: italic;
+}
+
+.jobtitle{
+    font-weight: bold;
+    font-size: large;
+}
+
+.bullet_items{
+    margin-left :17%;
+  }
+
+  .dates_worked{
+    font-size: small;
+  }

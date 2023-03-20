@@ -1,5 +1,13 @@
 {% extends "Base.html" %}
 
+<head>
+    {% block Other_CSS_Links %}
+    
+    <link rel="stylesheet" href="/static/css/resume.css"/>
+
+    {% endblock %}
+</head>
+
 <body>
     {% block body %}
     
@@ -11,8 +19,9 @@
 
     <div class="body">
         <h2>Career Summary</h2>
-        <p>KPMG   |   Audit, Tax, and Advisory Services</p>
-        <p>Data Scientist, Senior Associate   |   Oct 2021 - Present</p>
+
+        <p class="company">KPMG   |   <span class="companydescription">Audit, Tax, and Advisory Services</span></p>
+        <p class="jobtitle">Data Scientist, Senior Associate   |   <span class="dates_worked">Oct 2021 - Present</span></p>
         <p>
             As the data scientist for our team, it was my responsibility to develop solutions to automate reports for our client 
             and to give insight into ways to improve their processes to make them audit ready.
@@ -42,9 +51,40 @@
                     worth of inventory in total.
                 </li>
             </ul>
-
-
         </p>
+        
+        <p class="company">KPMG   |   <span class="companydescription">Audit, Tax, and Advisory Services</span></p>
+        <p class="jobtitle">Data Analyst, Associate   |   <span class="dates_worked">Apr 2018 - Oct 2021</span></p>
+        <p>
+            As the Data Analyst and team lead for the Inventory Coordination branch for our client, 
+            it was my responsibility to make sure that our team reported accurately on the progress 
+            of the inventory that we were conducting, and to promptly provide reliable information 
+            on any errors that were found regarding the physical assets and the inventory system, 
+            along with suggestions for how to fix those issues.
+            <ul class="bullet_items">
+                <li>
+                    <span class="boldtext">Created an Interactive Planograph</span> all in Excel using VBA. 
+                    This macro provided a top-down map view of the client’s warehouse, given their inventory data. 
+                    Clicking on any of the marked cells within the sheet would bring up detailed data in cells 
+                    off to the right describing what was in each level on that location, along with quantity, 
+                    dollar values, and other relevant information. After ingesting the inventory data and 
+                    selecting a warehouse, the macro would automatically size and shade the cells on a worksheet, 
+                    showing which areas were aisles, exits, storage areas, and locations with inventory currently 
+                    on them.
+                </li>
+            
+                <li>
+                    <span class="boldtext">GCSS (Global Combat Support System) Application</span> I created a 
+                    desktop application for our team utilizing python and the tkinter package. The application 
+                    stored data from multiple sources, including GCSS, in local .db files created with SQLite. 
+                    This data was used to export a variety of accurate and useful reports in Excel and PDF format. 
+                    This greatly helped our team and I with pinpointing and resolving issues with our client’s 
+                    inventory, and made our client deliverable reports uniform, accurate, and capable of being 
+                    generated in minutes by anyone on the team.
+                </li>
+            </ul>
+        </p>
+        
     </div>
     
     {% endblock %}

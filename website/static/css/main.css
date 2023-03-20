@@ -82,6 +82,7 @@ p {
   }
 
   .body{
+    justify-items: center;
     margin-left: 15%;
     margin-right: 18%;
   }
@@ -97,6 +98,4 @@ p {
   li{
     margin-top: 1%;
   }
-  .bullet_items{
-    margin-left :15%;
-  }
+  
