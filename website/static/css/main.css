@@ -25,8 +25,8 @@ ul {
 }
 p {
     text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 17%;
+    padding-right: 17%;
 }
 
 .sidepanel {
@@ -76,10 +76,11 @@ p {
     border: none;
   }
 
-  .headshot img {
+  .headshot {
     position: absolute;
-    right: 5%;
-    padding: 5%;
+    right: 5px;
+    padding-left: 5px;
+    margin-left: 5px;
   }
 
   .body{
