@@ -79,6 +79,7 @@ p {
   .headshot img {
     position: absolute;
     right: 5%;
+    padding: 5%;
   }
 
   .body{
