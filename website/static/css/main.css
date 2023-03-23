@@ -14,18 +14,10 @@ body{
     justify-items: center;
     padding-left: 170px;
     padding-right: 220px;
+    max-width: 1200px;
 }
 
-.indent1 {
-    margin-left: 4%;
-}
-.indent2 {
-    margin-left: 6%;
-}
-.indent3 {
-    margin-left: 8%;
-}
-.index_links, a {
+a {
     color: gold;
 }
 
