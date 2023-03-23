@@ -1,5 +1,6 @@
 .body, p, ul, li{
     text-align: left;
+    padding-right: 220;
 }
 
 .company{
@@ -16,10 +17,25 @@
     font-size: large;
 }
 
-.bullet_items{
-    margin-left :17%;
-  }
+/* .body{
+    position: absolute;
+    justify-items: center;
+    padding-left: 170px;
+    padding-right: 200px;
+} */
 
-  .dates_worked{
-    font-size: small;
-  }
+/* .bullet_items{
+    margin-left :1px;
+} */
+
+.dates_worked{
+font-size: small;
+}
+
+ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+li{
+    margin-top: 8px;
+}
