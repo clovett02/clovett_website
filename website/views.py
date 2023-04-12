@@ -4,8 +4,6 @@ views = Blueprint('views', __name__)
 
 @views.before_request
 def before_request():
-    if views.env == "development":
-        return
     if request.is_secure:
         return
 
