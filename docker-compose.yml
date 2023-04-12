@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  localsite:
+  clovett_website:
     image: clovett_website:latest
     container_name: clovett_website
     ports:
@@ -14,7 +14,7 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
     depends_on:
-      - localsite
+      - clovett_website
     ports:
       - "80:80"
       - "443:443"
