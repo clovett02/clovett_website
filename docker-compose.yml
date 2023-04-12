@@ -2,6 +2,8 @@ version: "3.8"
 
 services:
   clovett_website:
+    build:
+      context: clovett_website
     image: clovett_website:latest
     container_name: clovett_website
     ports:
