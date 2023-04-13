@@ -11,7 +11,7 @@ services:
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
 
-nginx:
+  nginx:
     image: nginx:latest
     container_name: nginx
     volumes:
