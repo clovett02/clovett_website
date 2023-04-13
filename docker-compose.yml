@@ -5,7 +5,7 @@ services:
     build:
       context: .
     image: clovett_website:latest
-    container_name: clovett_website
+    # container_name: clovett_website
     ports:
       - "5000"
     volumes:
