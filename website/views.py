@@ -13,18 +13,18 @@ def before_request():
 
 @views.route('/')
 def Home():
-    return render_template('Home.html')
+    return render_template('Home.html', pagename="Chris Lovett")
 
 @views.route('/resume')
 def Resume():
-    return render_template('Resume.html')
+    return render_template('Resume.html', pagename="Resume")
 
 @views.route('/projects')
 def Projects():
     """Can return html showing desription of projects with links to github
     and/or source code.
     """
-    return render_template('Projects.html')
+    return render_template('Projects.html', pagename="Projects")
 
 # @views.route('/headshot.png')
 # def Headshot():
