@@ -1,0 +1,21 @@
+events {
+    worker_connections 1000;
+}
+
+http {
+    server {
+        listen 80;
+        listen 443;
+
+        server_name clovett.me;
+
+        location /static {
+            alias /docker/compose/clovett_website/website/static;
+        }
+
+        location / {
+            proxy_pass https://clovett_website:443;
+        }
+    }
+
+}
